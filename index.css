@@ -16,10 +16,24 @@ body {
 	color: #fff4e5;
 }
 
-.content {
+.content,
+.content-mobile {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding-bottom: 1rem;
+}
+
+.content-mobile {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.content {
+		display: none;
+	}
+	.content-mobile {
+		display: flex;
+	}
 }
