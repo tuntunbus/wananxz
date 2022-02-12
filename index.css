@@ -41,11 +41,11 @@ body {
   text-shadow: 0 0 4px rgba(0, 0, 0, 1);
 }
 
-.content-mobile {
-  display: none;
-}
-
-.rain-mobile {
+.content,
+.content-mobile,
+.rain-small,
+.rain-middle,
+.rain {
   display: none;
 }
 
@@ -54,17 +54,23 @@ body {
   border-radius: 10px;
 }
 
-@media (max-width: 1000px) {
-  .rain {
-    display: none;
-  }
-  .rain-mobile {
+@media (max-width: 500px) {
+  .rain-small,
+  .content-mobile {
     display: flex;
   }
-  .content {
-    display: none;
-  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .rain-middle,
   .content-mobile {
+    display: flex;
+  }
+}
+
+@media (min-width: 1000px) {
+  .rain,
+  .content {
     display: flex;
   }
 }
