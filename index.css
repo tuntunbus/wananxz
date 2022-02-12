@@ -1,44 +1,70 @@
+@charset "UTF-8";
+
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-		"Helvetica Neue", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #000b1a;
-	color: #fff4e5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background: #000b1a;
+}
+
+.background-container {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 3s opacity;
+}
+
+.content-container {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff4e5;
 }
 
 .content,
 .content-mobile {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 1);
 }
 
 .content-mobile {
-	display: none;
+  display: none;
+}
+
+.rain-mobile {
+  display: none;
 }
 
 .gift_card_img {
-	width: 300px;
-	border-radius: 10px;
+  width: 300px;
+  border-radius: 10px;
 }
 
-@media (max-width: 800px) {
-	.content {
-		display: none;
-	}
-	.content-mobile {
-		display: flex;
-	}
+@media (max-width: 1000px) {
+  .rain {
+    display: none;
+  }
+  .rain-mobile {
+    display: flex;
+  }
+  .content {
+    display: none;
+  }
+  .content-mobile {
+    display: flex;
+  }
 }

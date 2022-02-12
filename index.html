@@ -29,67 +29,206 @@
 		/>
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
+		<link rel="stylesheet" media="(min-width: 1000px)" href="rain.css" />
+		<link
+			rel="stylesheet"
+			media="(max-width: 1000px)"
+			href="rain-mobile.css"
+		/>
 		<link rel="stylesheet" href="index.css" />
 	</head>
-	<body style="display: none">
-		<div class="content">
-			<img class="gift_card_img" src="gift_card.jpg" alt="gift card" />
-			<div style="font-size: 0.8rem; margin-top: 0.3rem; color: #eddeed">
-				№: 6204094337364617 | 98728115
+	<body>
+		<div class="background-container" id="background-container">
+			<div class="rain-mobile">
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
 			</div>
-			<div style="font-size: 1.5rem; margin-top: 4rem">
-				<u>☕️☕️</u> 🦆 🦢
+			<div class="rain">
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
+				<div class="drop"></div>
 			</div>
-			<div style="font-size: 1rem; margin-top: 0.3rem">
-				「你好，我要两杯燕麦拿铁，一杯加糖给我，一杯少冰给我的好朋友玄子。」
-			</div>
-			<div style="font-size: 1.5rem; margin-top: 2rem">
-				<span style="display: inline-block; transform: scaleX(-1)"
-					>🦆</span
-				>☕️ ☕️<span style="margin-left: 2px">🦢</span>
-			</div>
-			<div style="font-size: 1rem; margin-top: 0.3rem">
-				「玄子，这是给你的燕麦拿铁，祝你情人节快乐。」
-			</div>
-			<div style="font-size: 1rem; margin-top: 0.3rem; display: none">
-				「还有，我爱你」
-			</div>
-			<div style="font-size: 0.8rem; margin-top: 4rem">- 2022.2.14 -</div>
-			<div style="font-size: 0.8rem; margin-top: 0.5rem">GF</div>
 		</div>
-		<div class="content-mobile">
-			<img class="gift_card_img" src="gift_card.jpg" alt="gift card" />
-			<div style="font-size: 0.8rem; margin-top: 0.3rem; color: #eddeed">
-				№: 6204094337364617 | 98728115
+		<div class="content-container">
+			<div class="content">
+				<img
+					class="gift_card_img"
+					src="gift_card.jpg"
+					alt="gift card"
+				/>
+				<div
+					style="
+						font-size: 0.8rem;
+						margin-top: 0.3rem;
+						color: #eddeed;
+					"
+				>
+					№: 6204094337364617 | 98728115
+				</div>
+				<div style="font-size: 1.5rem; margin-top: 4rem">
+					<u>☕️☕️</u> 🦆 🦢
+				</div>
+				<div style="font-size: 1rem; margin-top: 0.3rem">
+					「你好，我要两杯燕麦拿铁，一杯加糖给我，一杯少冰给我的好朋友玄子。」
+				</div>
+				<div style="font-size: 1.5rem; margin-top: 2rem">
+					<span style="display: inline-block; transform: scaleX(-1)"
+						>🦆</span
+					><span
+						style="cursor: default"
+						onclick="onBlueClick();this.innerHTML='💙'"
+						>☕️</span
+					>
+					<span
+						style="cursor: default"
+						onclick="onRedClick();this.innerHTML='❤️'"
+						>☕️</span
+					><span style="margin-left: 2px">🦢</span>
+				</div>
+				<div style="font-size: 1rem; margin-top: 0.3rem">
+					「玄子，这是给你的燕麦拿铁，祝你情人节快乐。」
+				</div>
+				<div style="font-size: 0.8rem; margin-top: 4rem">
+					- 2022.2.14 -
+				</div>
+				<div style="font-size: 0.8rem; margin-top: 0.5rem">GF</div>
 			</div>
-			<div style="font-size: 1.5rem; margin-top: 4rem">
-				<u>☕️☕️</u> 🦆 🦢
+			<div class="content-mobile">
+				<img
+					class="gift_card_img"
+					src="gift_card.jpg"
+					alt="gift card"
+				/>
+				<div
+					style="
+						font-size: 0.8rem;
+						margin-top: 0.3rem;
+						color: #eddeed;
+					"
+				>
+					№: 6204094337364617 | 98728115
+				</div>
+				<div style="font-size: 1.5rem; margin-top: 4rem">
+					<u>☕️☕️</u> 🦆 🦢
+				</div>
+				<div style="font-size: 1rem; margin-top: 0.3rem">
+					你好，我要两杯燕麦拿铁
+				</div>
+				<div style="font-size: 1rem; margin-top: 0.2rem">
+					一杯加糖，给我
+				</div>
+				<div style="font-size: 1rem; margin-top: 0.2rem">
+					一杯少冰，给我的好朋友玄子
+				</div>
+				<div style="font-size: 1.5rem; margin-top: 2rem">
+					<span style="display: inline-block; transform: scaleX(-1)"
+						>🦆</span
+					><span
+						style="cursor: default"
+						onclick="onBlueClick();this.innerHTML='💙'"
+						>☕️</span
+					>
+					<span
+						style="cursor: default"
+						onclick="onRedClick();this.innerHTML='❤️'"
+						>☕️</span
+					><span style="margin-left: 2px">🦢</span>
+				</div>
+				<div style="font-size: 1rem; margin-top: 0.3rem">
+					玄子，这是给你的燕麦拿铁
+				</div>
+				<div style="font-size: 1rem; margin-top: 0.2rem">
+					祝你情人节快乐
+				</div>
+				<div style="font-size: 0.8rem; margin-top: 4rem">
+					- 2022.2.14 -
+				</div>
+				<div style="font-size: 0.8rem; margin-top: 0.5rem">GF</div>
 			</div>
-			<div style="font-size: 1rem; margin-top: 0.3rem">
-				你好，我要两杯燕麦拿铁
-			</div>
-			<div style="font-size: 1rem; margin-top: 0.2rem">
-				一杯加糖，给我
-			</div>
-			<div style="font-size: 1rem; margin-top: 0.2rem">
-				一杯少冰，给我的好朋友玄子
-			</div>
-			<div style="font-size: 1.5rem; margin-top: 2rem">
-				<span style="display: inline-block; transform: scaleX(-1)"
-					>🦆</span
-				>☕️ ☕️<span style="margin-left: 2px">🦢</span>
-			</div>
-			<div style="font-size: 1rem; margin-top: 0.3rem">
-				玄子，这是给你的燕麦拿铁
-			</div>
-			<div style="font-size: 1rem; margin-top: 0.2rem">
-				祝你情人节快乐
-			</div>
-			<div style="font-size: 1rem; margin-top: 0.2rem; display: none">
-				还有，我爱你
-			</div>
-			<div style="font-size: 0.8rem; margin-top: 4rem">- 2022.2.14 -</div>
-			<div style="font-size: 0.8rem; margin-top: 0.5rem">GF</div>
 		</div>
+		<script type="text/javascript">
+			var blue = false;
+			var red = false;
+			var onBlueClick = function () {
+				blue = true;
+				rain();
+			};
+			var onRedClick = function () {
+				red = true;
+				rain();
+			};
+			var rain = function () {
+				if (blue && red) {
+					document.getElementById(
+						"background-container"
+					).style.opacity = 0.6;
+				}
+			};
+		</script>
 	</body>
 </html>
