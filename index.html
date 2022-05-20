@@ -58,9 +58,19 @@
 				src="520title5.png"
 				alt=""
 			/>
-			<img class="content__card" src="pga.jpg" alt="" />
+			<div class="content__card" onclick="flip(this)">
+				<div class="content__card__inner">
+					<img class="content__card__front" src="pga.jpg" alt="" />
+					<img class="content__card__back" src="enen520.jpg" alt="" />
+				</div>
+			</div>
 			<img class="content__code-title" src="pgacodetitle.png" alt="" />
 			<img class="content__code" src="pgacode.png" alt="" />
 		</div>
+		<script type="text/javascript">
+			var flip = (target) => {
+				target.classList.toggle('content__card--flipped');
+			};
+		</script>
 	</body>
 </html>
