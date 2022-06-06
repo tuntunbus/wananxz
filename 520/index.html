@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>i n 55!w !</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="favicon/safari-pinned-tab.svg"
+			color="#7593b2"
+		/>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+		<link rel="stylesheet" href="golf2.css" />
+	</head>
+	<body>
+		<div class="content">
+			<img
+				class="content__title content__title__1"
+				src="520title1.png"
+				alt=""
+			/>
+			<img
+				class="content__title content__title__2"
+				src="520title2.png"
+				alt=""
+			/>
+			<img
+				class="content__title content__title__3"
+				src="520title3.png"
+				alt=""
+			/>
+			<img
+				class="content__title content__title__4"
+				src="520title4.png"
+				alt=""
+			/>
+			<img
+				class="content__title content__title__5"
+				src="520title5.png"
+				alt=""
+			/>
+			<div class="content__card" onclick="flip(this)">
+				<div class="content__card__inner">
+					<img class="content__card__front" src="pga.jpg" alt="" />
+					<img class="content__card__back" src="enen520.jpg" alt="" />
+				</div>
+			</div>
+			<img class="content__code-title" src="pgacodetitle.png" alt="" />
+			<img class="content__code" src="pgacode.png" alt="" />
+		</div>
+		<script type="text/javascript">
+			var flip = (target) => {
+				target.classList.toggle('content__card--flipped');
+			};
+		</script>
+	</body>
+</html>
