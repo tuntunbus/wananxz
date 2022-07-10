@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	background: rgb(53, 96, 125);
+}
+.image1 {
+	width: 50vh;
+	max-width: 90vw;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.image2 {
+	width: 50vh;
+	max-width: 90vw;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
