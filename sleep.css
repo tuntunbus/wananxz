@@ -5,7 +5,7 @@ body {
 	background: rgb(53, 96, 125);
 }
 .image1 {
-	width: 50vh;
+	height: 40vh;
 	max-width: 90vw;
 	position: absolute;
 	top: 0;
@@ -17,7 +17,7 @@ body {
 	width: 50vh;
 	max-width: 90vw;
 	position: absolute;
-	bottom: 0;
+	bottom: 10vh;
 	left: 50%;
 	transform: translateX(-50%);
 }
